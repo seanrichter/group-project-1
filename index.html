@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS Style and Reset-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <title>Financial Xchange</title>
+      <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Main Bootstrap Search -->
+    <div class="container">
+
+    <!-- Jumbotron for Title -->
+    <div class="jumbotron" style="background-color: #4040a1 ; color: white;">
+      <h1 class="text-center">
+        <strong>
+          <i class="fa fa-newspaper-o"></i>Financial Xchange</strong>
+      </h1>
+        <h3 class="text-center">Compare financial data from 3 different sources</h3>
+    </div>
+
+    <!-- Row for Searching First Column Currency Converter -->
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="panel panel-default">
+            <img src="assets\images\currency-exchange-dollar-and-rupee-vector-3730203.jpg" class="card-img-top" alt="">
+          <div class="panel-heading">
+            <h3 class="panel-title"><small>Cuerrency Converter API:</small></h3>
+          </div>
+          <div class="panel-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="text">Beginning Currency: </label>
+                <h3 type="search" class="form-control" id="beginningCurrency"></h3>
+              </div>
+
+              <div class="form-group">
+                  <label for="text">Ending Currency: </label>
+                  <h3 type="search" class="form-control" id="endingCurrency"></h3>
+              </div>
+
+              <div class="form-group">
+                  <label for="text">Exchange Rate: </label>
+                  <h3 type="search" class="form-control" id="exchangeRate"></h3>
+              </div>
+
+                <div class="form-group">
+                    <label for="text">Currency Amount:</label>
+                    <h3 type="search" class="form-control" id="currencyAmount"></h3>
+                </div>
+                <button type="Submit" class="btn btn-primary" id="search">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Row for Searching Second Column Investors Exchange -->
+      <div class="col-lg-4">
+        <div class="panel panel-default">
+            <img src="assets\images\finance-graphic-up-rising-logo-vector-25233857.jpg" class="card-img-top" alt="...">
+          
+          <div class="panel-heading">
+            <h3 class="panel-title"><small>Investors Exchange API</small></h3>
+          </div>
+
+          <div class="panel-body">
+            <form role="form">
+
+              <div class="form-group">
+                <label for="text">Company Name:</label>
+                <h3 type="search" class="form-control" id="company"></h3>
+              </div>
+
+              <div class="form-group">
+                <label for="text">Latest Price (USD):</label>
+                <h3 type="search" class="form-control" id="latestPrice"></h3>
+              </div>
+    
+              <div class="form-group">
+                  <label for="text">Week 52 High (USD):</label>
+                  <h3 type="search" class="form-control" id="week52high"></h3>
+              </div>
+    
+              <div class="form-group">
+                  <label for="text">Week 52 Low (USD):</label>
+                  <h3 type="search" class="form-control" id="week52low"></h3>
+              </div>
+    
+              <div class="form-group">
+                  <label for="text">Year to Date Change (Percent):</label>
+                  <h3 type="search" class="form-control" id="ytdChange"></h3>
+              </div>
+                  <button type="Submit" class="btn btn-primary" id="search">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Row for Searching Third Column Crypto Asset Ticker -->
+      <div class="col-lg-4">
+        <div class="panel panel-default">
+            <img src="assets\images\bitcoin-crypto-currency-stick-graph-chart-of-stock-vector-16544400.jpg" class="card-img-top" alt="...">
+          
+          <div class="panel-heading">
+            <h3 class="panel-title"><small>Crypto Asset Ticker API</small></h3>
+          </div>
+
+            <div class="panel-body">
+              <form role="form">
+                  
+                <div class="form-group">
+                  <label for="text">Coin Name:</label>
+                  <h3 type="search" class="form-control" id="coinName"></h3>
+                </div>
+      
+                <div class="form-group">
+                    <label for="text">Last Price (USD):</label>
+                    <h3 type="search" class="form-control" id="lastPrice"></h3>
+                </div>
+      
+                <div class="form-group">
+                    <label for="text">Price 24 Hour (Percent):</label>
+                    <h3 type="search" class="form-control" id="price24hr"></h3>
+                </div>
+      
+                <div class="form-group">
+                    <label for="text">Volume 24 Hour (Percent):</label>
+                    <h3 type="search" class="form-control" id="volume24hr"></h3>
+                </div>
+                    <button type="Submit" class="btn btn-primary" id="search">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+    <script src="assets/javascript/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+body {
+    background-image: url(https://previews.123rf.com/images/annaleni/annaleni1705/annaleni170500284/79033258-green-line-bitcoin-seamless-pattern-vector-illustration-of-outline-tile-background-cryptocurrency-fi.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+  }
+  .jumbotron {
+      margin-bottom: 100%;
+      width: 100%;
+      line-height: 25px;
+      background: #a2b9bc;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 1px 2px #36486b;  
+  }
+  
+  .row {
+      margin-bottom: 15px;
+      line-height: 25px;
+      background: #a2b9bc;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0px 1px 2px #36486b;
+  }
+  
+  .col-lg-4 {
+      margin: 0px;
+      line-height: 25px;
+      background: rgba(245, 247, 245, 0.6);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0px 1px 2px #36486b;
+  }
+  
+  .card-img-top {
+    height: 300px;
+    width: 200px;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+      body {
+        background-color: #333;
+      }
+    
+      .wrapper {
+        /* Box-model */
+        width: 100%;
+        padding: 20px;
+      }
+    
+      #main-content,
+      #sidebar {
+        width: 100%;
+      }
+    
+      #sidebar {
+        margin-top: 40px;
+      }
+    }
+    
+    /* Additional Screen Sizes */
+    
+    /* Width at 320px and below */
+    @media screen and (max-width: 320px) {
+      body {
+        background-color: #333;
+      }
+    
+      .wrapper {
+        /* Box-model */
+        width: 100%;
+        padding: 20px;
+      }
+    
+      #main-content,
+      #sidebar {
+        width: 100%;
+      }
+    
+      #sidebar {
+        margin-top: 40px;
+      }
+    }
+    
+    /* Width at 168px and below */
+    @media screen and (max-width: 168px) {
+      body {
+        background-color: #333;
+      }
+    
+      .wrapper {
+        /* Box-model */
+        width: 100%;
+        padding: 20px;
+      }
+    
+      #main-content,
+      #sidebar {
+        width: 100%;
+      }
+    
+      #sidebar {
+        margin-top: 40px;
+      }
+    }
+    
